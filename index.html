@@ -1,7 +1,6 @@
-<!doctype html>
-<html lang="en" class="no-js">
-    
-    
+<!doctype html>  
+    <html lang="en-US">
+<meta charset="UTF-8">
   
 
 
@@ -105,21 +104,63 @@
                 
                 
                 
+                
+                              <h2>Some of my projects:</h2>
+                <ul>
+                <li> <a href="http://www.yahoo.com">Scratch Project Drop Collector</a></li></ul>
+                
+                <br><br>
+                
+                <p>-------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                
+                
+                <h2>Caesar Cipher:</h2>
+                
+<script type="text/javascript">
 
-<canvas id="myCanvas" width="250" height="100" style="border:1px solid #d3d3d3;">
-</canvas>
+	var alpha1 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-<script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.font = "30px Arial";
-ctx.strokeText("Follow me here:",10,50);
-</script>
+	var alpha2 = alpha1.split('').reverse().join('');  // could also shuffle this array to scramble more
 
+	function encode(message,flag) {
+	  var c, p;
+	  var m1 = message;
+	  var m2 = "";
+	  for (var i = 0; i < m1.length; i++) {
+	    c = m1[i];
+	    if (flag) { p = alpha1.indexOf(c); } else { p = alpha2.indexOf(c); }
+	    if (p == -1) { m2 += c; }
+	            else {if (flag) { m2 += alpha2[p]; } else m2 += alpha1[p]; }
+	  }
+	  return cipherForm.message.value = m2;
+	}
 
+	</script>
+	<form name="cipherForm">
+	<textarea name="message" cols="40" rows="3">(Replace this text with the words you want to encode or decode)</textarea><br />
+	<input type="button" value="Encode" onclick="encode(cipherForm.message.value,true);" />
+	<input type="button" value="Decode" onclick="encode(cipherForm.message.value,false);" />
+	</form>
 
+<br><br><br> 
+                
+                
+                
+                <SCRIPT LANGUAGE = "Javascript"> var today= new Date() </SCRIPT> .... <BODY onload=alert(today)>    <!this is my javascript portion of my assignment>
+                
+                
+        
+                
+                
+                <br><br><br>
+                
+                
+                
 
-
+                
+                
+                
+                
                 
                 <a href="https://www.instagram.com/matttoppi/?hl=en">
   <img src="https://media0.giphy.com/media/nql7dZDWmBCKc/200w.webp?cid=3640f6095c71c4b36a6a4b7955c33d70" alt="Instagram" style="width:70px;height:70px;border:0;">
